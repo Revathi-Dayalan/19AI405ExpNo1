@@ -40,13 +40,14 @@
 <p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
-##Program:
+<h3></h3>program:
 ~~~
 class VacuumCleanerAgent:
     def __init__(self):
         # Initialize the agent's state (location and dirt status)
         self.location = "A"  # Initial location (can be "A" or "B")
-        self.dirt_status = {"A": False, "B": False}  # Initial dirt status (False means no dirt)
+        self.dirt_status = {"A": False, "B": False}  # Initial dirt status
+        (False means no dirt)
 
     def move_left(self):
         # Move the agent to the left if possible
