@@ -2,7 +2,6 @@
 <h3>Name: Revathi.D </h3>
 <h3>Register Number: 212221240045</h3>
 
-
 <h3>AIM:</h3>
 <br>
 <p>To find the PEAS description for the given AI problem and develop an AI agent.</p>
@@ -46,8 +45,8 @@ class VacuumCleanerAgent:
     def __init__(self):
         # Initialize the agent's state (location and dirt status)
         self.location = "A"  # Initial location (can be "A" or "B")
-        self.dirt_status = {"A": False, "B": False}  # Initial dirt status
-        (False means no dirt)
+        self.dirt_status = {"A": False, "B": False}  # Initial dirt status (False means no dirt)
+
 
     def move_left(self):
         # Move the agent to the left if possible
