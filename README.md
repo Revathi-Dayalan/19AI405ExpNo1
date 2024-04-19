@@ -48,27 +48,27 @@ class VacuumCleanerAgent:
         self.dirt_status = {"A": False, "B": False}  # Initial dirt status (False means no dirt)
 
 
-    def move_left(self):
+  def move_left(self):
         # Move the agent to the left if possible
         if self.location == "B":
             self.location = "A"
 
-    def move_right(self):
+   def move_right(self):
         # Move the agent to the right if possible
         if self.location == "A":
             self.location = "B"
 
-    def suck_dirt(self):
+  def suck_dirt(self):
         #Suck dirt in the current location if there is dirt
         if self.dirt_status[self.location]:
             self.dirt_status[self.location] = False
             print(f"Sucked dirt in location {self.location}")
 
-    def do_nothing(self):
+  def do_nothing(self):
         #Do nothing
         pass
 
-    def perform_action(self, action):
+   def perform_action(self, action):
         #Perform the specified action
         if action == "left":
             self.move_left()
@@ -81,7 +81,7 @@ class VacuumCleanerAgent:
         else:
             print("Invalid action")
 
-    def print_status(self):
+  def print_status(self):
         #Print the current status of the agent
         print(f"Location: {self.location}, Dirt Status: {self.dirt_status}")
 
@@ -97,9 +97,10 @@ agent.print_status()
 
 agent.perform_action("nothing")
 agent.print_status()
-~~~
-Output:
-![image](https://github.com/Revathi-Dayalan/19AI405ExpNo1/assets/96000574/7ecea8b4-562e-4a30-adbb-99746f4e5d10)
+~~
+### OUTPUT:
+![image](https://github.com/Revathi-Dayalan/19AI405ExpNo1/assets/96000574/1ed1db02-eab7-4dd8-90f6-d9032b4effcd)
+
 Result:
 Thus the AI Agent with PEAS Description was developed and executed sucessfully.
 
